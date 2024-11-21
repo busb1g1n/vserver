@@ -1,0 +1,119 @@
+\hypertarget{classInterface}{}\doxysection{Класс Interface}
+\label{classInterface}\index{Interface@{Interface}}
+
+
+Класс для управления интерфейсом программы.  
+
+
+
+
+{\ttfamily \#include $<$interface.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInterface_a4406d74c75bdfe150bf72be1f1cda8b1}{Interface}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор принимает параметры командной строки. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classInterface_a9fbb2f12539837325b46667be09362fe}\label{classInterface_a9fbb2f12539837325b46667be09362fe}} 
+void {\bfseries parse\+Args} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Метод для вывода справки. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classInterface_a4d4abe80e544fb1af93fa6f1087a2848}\label{classInterface_a4d4abe80e544fb1af93fa6f1087a2848}} 
+void {\bfseries show\+Help} () const
+\item 
+std\+::string \& \mbox{\hyperlink{classInterface_a9cbd457c05d267f03d630809c8171c22}{get\+Path\+To\+DB}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения пути к файлу базы данных. \end{DoxyCompactList}\item 
+std\+::string \& \mbox{\hyperlink{classInterface_a99a4a20b61e26bf770b566346a83c9a1}{get\+Path\+To\+Log}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения пути к файлу логов. \end{DoxyCompactList}\item 
+std\+::string \& \mbox{\hyperlink{classInterface_a309128e4c999ccf3ecea0ec1e8e8400f}{get\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Метод для получения адреса. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classInterface_a3a5c1db74d78ce7ec5e2f69e8de29f27}{get\+Port}} () const
+\begin{DoxyCompactList}\small\item\em Метод для получения порта. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для управления интерфейсом программы. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classInterface_a4406d74c75bdfe150bf72be1f1cda8b1}\label{classInterface_a4406d74c75bdfe150bf72be1f1cda8b1}} 
+\index{Interface@{Interface}!Interface@{Interface}}
+\index{Interface@{Interface}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{Interface()}{Interface()}}
+{\footnotesize\ttfamily Interface\+::\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Конструктор принимает параметры командной строки. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em argc} & Количество аргументов командной строки. \\
+\hline
+{\em argv} & Аргументы командной строки. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classArgsDecodeException}{Args\+Decode\+Exception}}} & Если аргументы командной строки некорректны. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classInterface_a309128e4c999ccf3ecea0ec1e8e8400f}\label{classInterface_a309128e4c999ccf3ecea0ec1e8e8400f}} 
+\index{Interface@{Interface}!getAddress@{getAddress}}
+\index{getAddress@{getAddress}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{getAddress()}{getAddress()}}
+{\footnotesize\ttfamily std\+::string \& Interface\+::get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для получения адреса. 
+
+\begin{DoxyReturn}{Возвращает}
+Адрес. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterface_a9cbd457c05d267f03d630809c8171c22}\label{classInterface_a9cbd457c05d267f03d630809c8171c22}} 
+\index{Interface@{Interface}!getPathToDB@{getPathToDB}}
+\index{getPathToDB@{getPathToDB}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{getPathToDB()}{getPathToDB()}}
+{\footnotesize\ttfamily std\+::string \& Interface\+::get\+Path\+To\+DB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для получения пути к файлу базы данных. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к файлу базы данных. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterface_a99a4a20b61e26bf770b566346a83c9a1}\label{classInterface_a99a4a20b61e26bf770b566346a83c9a1}} 
+\index{Interface@{Interface}!getPathToLog@{getPathToLog}}
+\index{getPathToLog@{getPathToLog}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{getPathToLog()}{getPathToLog()}}
+{\footnotesize\ttfamily std\+::string \& Interface\+::get\+Path\+To\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для получения пути к файлу логов. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к файлу логов. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterface_a3a5c1db74d78ce7ec5e2f69e8de29f27}\label{classInterface_a3a5c1db74d78ce7ec5e2f69e8de29f27}} 
+\index{Interface@{Interface}!getPort@{getPort}}
+\index{getPort@{getPort}!Interface@{Interface}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily int Interface\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Метод для получения порта. 
+
+\begin{DoxyReturn}{Возвращает}
+Порт. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/busigin/server/source/modules/\mbox{\hyperlink{interface_8h}{interface.\+h}}\item 
+/home/student/Документы/busigin/server/source/modules/interface.\+cpp\end{DoxyCompactItemize}

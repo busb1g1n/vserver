@@ -1,0 +1,169 @@
+\hypertarget{classException}{}\doxysection{Класс Exception}
+\label{classException}\index{Exception@{Exception}}
+
+
+Базовый класс для исключений.  
+
+
+
+
+{\ttfamily \#include $<$exceptions.\+h$>$}
+
+
+
+Граф наследования\+:Exception\+:
+% FIG 0
+
+
+Граф связей класса Exception\+:
+% FIG 1
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classException_ae2b46f6edd1bda557d9c424c5ed059dd}{Exception}} (const std\+::string \&\mbox{\hyperlink{classException_a80bf622a8fc3c48fa6ab1a3fc024ff91}{message}}, const std\+::string \&\mbox{\hyperlink{classException_a6211fd6ce557f134b646d00486746cb1}{func}}=\char`\"{}Undefended\char`\"{}, bool \mbox{\hyperlink{classException_ab28fd03b3d3f97b00c0a3e37d4e5d809}{is\+\_\+critical}}=false)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classException}{Exception}}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classException_a0f5d54dd24f5d6f0873f1642eee7f4ab}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Получение имени исключения. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classException_a657c5c353571a96e39a0a553375d6060}{get\+Func}} () const
+\begin{DoxyCompactList}\small\item\em Получение имени функции, в которой возникло исключение. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classException_acea06c50f6eeaaaae36f187d99ef9226}{get\+Message}} () const
+\begin{DoxyCompactList}\small\item\em Получение сообщения об ошибке. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classException_aec343e3ab70446d9cfb22da7101bc373}{get\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Получение времени возникновения исключения. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classException_a2317b19e17eb076a085c364928ce8e73}{is\+Critical}} () const
+\begin{DoxyCompactList}\small\item\em Проверка флага критичности исключения. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{classException_a91eace2bc486fa18d3f913a28f3921f8}{what}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Метод для получения сообщения об ошибке. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classException_a1881c44fa7b9ba55a1a16882c999a0e6}\label{classException_a1881c44fa7b9ba55a1a16882c999a0e6}} 
+std\+::string {\bfseries name}
+\begin{DoxyCompactList}\small\item\em Имя исключения. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classException_a6211fd6ce557f134b646d00486746cb1}\label{classException_a6211fd6ce557f134b646d00486746cb1}} 
+std\+::string {\bfseries func}
+\begin{DoxyCompactList}\small\item\em Имя функции, в которой возникло исключение. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classException_a80bf622a8fc3c48fa6ab1a3fc024ff91}\label{classException_a80bf622a8fc3c48fa6ab1a3fc024ff91}} 
+std\+::string {\bfseries message}
+\begin{DoxyCompactList}\small\item\em Сообщение об ошибке. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classException_a1cdca197e4d37fafee46b46260e544f6}\label{classException_a1cdca197e4d37fafee46b46260e544f6}} 
+std\+::string {\bfseries time}
+\begin{DoxyCompactList}\small\item\em Время возникновения исключения. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classException_ab28fd03b3d3f97b00c0a3e37d4e5d809}\label{classException_ab28fd03b3d3f97b00c0a3e37d4e5d809}} 
+bool {\bfseries is\+\_\+critical}
+\begin{DoxyCompactList}\small\item\em Флаг критичности исключения. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classException_aef95392c78d379942ab8e52ec84dd6ed}\label{classException_aef95392c78d379942ab8e52ec84dd6ed}} 
+std\+::string {\bfseries what\+\_\+message}
+\begin{DoxyCompactList}\small\item\em Полное сообщение об ошибке. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Базовый класс для исключений. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classException_ae2b46f6edd1bda557d9c424c5ed059dd}\label{classException_ae2b46f6edd1bda557d9c424c5ed059dd}} 
+\index{Exception@{Exception}!Exception@{Exception}}
+\index{Exception@{Exception}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{Exception()}{Exception()}}
+{\footnotesize\ttfamily Exception\+::\+Exception (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message,  }\item[{const std\+::string \&}]{func = {\ttfamily \char`\"{}Undefended\char`\"{}},  }\item[{bool}]{is\+\_\+critical = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classException}{Exception}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & Сообщение об ошибке. \\
+\hline
+{\em func} & Имя функции, в которой возникло исключение (по умолчанию \char`\"{}\+Undefended\char`\"{}). \\
+\hline
+{\em is\+\_\+critical} & Флаг критичности исключения (по умолчанию false). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classException_a657c5c353571a96e39a0a553375d6060}\label{classException_a657c5c353571a96e39a0a553375d6060}} 
+\index{Exception@{Exception}!getFunc@{getFunc}}
+\index{getFunc@{getFunc}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{getFunc()}{getFunc()}}
+{\footnotesize\ttfamily std\+::string Exception\+::get\+Func (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получение имени функции, в которой возникло исключение. 
+
+\begin{DoxyReturn}{Возвращает}
+Имя функции. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classException_acea06c50f6eeaaaae36f187d99ef9226}\label{classException_acea06c50f6eeaaaae36f187d99ef9226}} 
+\index{Exception@{Exception}!getMessage@{getMessage}}
+\index{getMessage@{getMessage}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{getMessage()}{getMessage()}}
+{\footnotesize\ttfamily std\+::string Exception\+::get\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получение сообщения об ошибке. 
+
+\begin{DoxyReturn}{Возвращает}
+Сообщение об ошибке. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classException_a0f5d54dd24f5d6f0873f1642eee7f4ab}\label{classException_a0f5d54dd24f5d6f0873f1642eee7f4ab}} 
+\index{Exception@{Exception}!getName@{getName}}
+\index{getName@{getName}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Exception\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получение имени исключения. 
+
+\begin{DoxyReturn}{Возвращает}
+Имя исключения. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classException_aec343e3ab70446d9cfb22da7101bc373}\label{classException_aec343e3ab70446d9cfb22da7101bc373}} 
+\index{Exception@{Exception}!getTime@{getTime}}
+\index{getTime@{getTime}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily std\+::string Exception\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Получение времени возникновения исключения. 
+
+\begin{DoxyReturn}{Возвращает}
+Время возникновения исключения. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classException_a2317b19e17eb076a085c364928ce8e73}\label{classException_a2317b19e17eb076a085c364928ce8e73}} 
+\index{Exception@{Exception}!isCritical@{isCritical}}
+\index{isCritical@{isCritical}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{isCritical()}{isCritical()}}
+{\footnotesize\ttfamily bool Exception\+::is\+Critical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Проверка флага критичности исключения. 
+
+\begin{DoxyReturn}{Возвращает}
+true, если исключение критическое, иначе false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classException_a91eace2bc486fa18d3f913a28f3921f8}\label{classException_a91eace2bc486fa18d3f913a28f3921f8}} 
+\index{Exception@{Exception}!what@{what}}
+\index{what@{what}!Exception@{Exception}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily const char $\ast$ Exception\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+
+
+Метод для получения сообщения об ошибке. 
+
+\begin{DoxyReturn}{Возвращает}
+Сообщение об ошибке. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/busigin/server/source/modules/\mbox{\hyperlink{exceptions_8h}{exceptions.\+h}}\item 
+/home/student/Документы/busigin/server/source/modules/exceptions.\+cpp\end{DoxyCompactItemize}

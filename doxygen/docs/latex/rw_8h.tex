@@ -1,0 +1,83 @@
+\hypertarget{rw_8h}{}\doxysection{Файл /home/student/Документы/busigin/server/source/modules/rw.h}
+\label{rw_8h}\index{/home/student/Документы/busigin/server/source/modules/rw.h@{/home/student/Документы/busigin/server/source/modules/rw.h}}
+
+
+Определение функций для работы с файлами.  
+
+
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}exceptions.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для rw.\+h\+:
+% FIG 0
+Граф файлов, в которые включается этот файл\+:
+% FIG 1
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{rw_8cpp_a7455936c164fbe9f038d879d3b7f9ff0}{rw\+::read\+Data\+Base}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Функция для чтения базы данных. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rw_8cpp_a5716266979b2a6cf359c2e95a77ebab3}{rw\+::write\+Log}} (const std\+::string \&path, const \mbox{\hyperlink{classException}{Exception}} \&e)
+\begin{DoxyCompactList}\small\item\em Функция для записи лога. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Определение функций для работы с файлами. 
+
+Этот файл содержит определения функций для чтения базы данных и записи логов. \begin{DoxyDate}{Дата}
+23.\+11.\+2024 
+\end{DoxyDate}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Автор}
+Бусыгин Г. С. 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{rw_8cpp_a7455936c164fbe9f038d879d3b7f9ff0}\label{rw_8cpp_a7455936c164fbe9f038d879d3b7f9ff0}} 
+\index{rw.h@{rw.h}!readDataBase@{readDataBase}}
+\index{readDataBase@{readDataBase}!rw.h@{rw.h}}
+\doxysubsubsection{\texorpdfstring{readDataBase()}{readDataBase()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, std\+::string $>$ rw\+::read\+Data\+Base (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Функция для чтения базы данных. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em path} & Путь к файлу базы данных. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Возвращает map, содержащий данные из базы данных. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRWException}{RWException}}} & Если произошла ошибка при чтении файла. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{rw_8cpp_a5716266979b2a6cf359c2e95a77ebab3}\label{rw_8cpp_a5716266979b2a6cf359c2e95a77ebab3}} 
+\index{rw.h@{rw.h}!writeLog@{writeLog}}
+\index{writeLog@{writeLog}!rw.h@{rw.h}}
+\doxysubsubsection{\texorpdfstring{writeLog()}{writeLog()}}
+{\footnotesize\ttfamily void rw\+::write\+Log (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{const \mbox{\hyperlink{classException}{Exception}} \&}]{e }\end{DoxyParamCaption})}
+
+
+
+Функция для записи лога. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em path} & Путь к файлу логов. \\
+\hline
+{\em e} & Исключение, которое нужно записать в лог. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classRWException}{RWException}}} & Если произошла ошибка при записи файла. \\
+\hline
+\end{DoxyExceptions}

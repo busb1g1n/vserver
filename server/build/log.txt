@@ -1,0 +1,8 @@
+[Critical: True]	[2024-11-21 15:02:19]	[ArgsDecodeException in Interface::parseArgs]	[Message: Invalid argument]
+[Critical: True]	[2024-11-21 15:02:38]	[NetworkException in close]	[Message: Failed to shutdown client socket]
+[Critical: False]	[2024-11-21 15:04:30]	[NetworkException in calc]	[Message: Failed to send average to client]
+[Critical: False]	[2024-11-21 15:06:38]	[NetworkException in calc]	[Message: Failed to send average to client]
+[Critical: True]	[2024-11-21 15:10:47]	[NetworkException in Network]	[Message: Failed to bind socket]
+[Critical: True]	[2024-11-21 16:09:47]	[RWException in readDataBase]	[Message: Failed to open the database file: ./n/db.txt]
+[Critical: True]	[2024-11-21 16:17:19]	[DataDecodeException in readDataBase]	[Message: Invalid line format: user]
+[Critical: False]	[2024-11-21 16:19:59]	[AuthException in auth]	[Message: Hash mismatch]

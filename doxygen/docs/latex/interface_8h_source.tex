@@ -1,0 +1,38 @@
+\hypertarget{interface_8h_source}{}\doxysection{interface.\+h}
+\label{interface_8h_source}\index{/home/student/Документы/busigin/server/source/modules/interface.h@{/home/student/Документы/busigin/server/source/modules/interface.h}}
+\mbox{\hyperlink{interface_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef INTERFACE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define INTERFACE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{exceptions_8h}{exceptions.h}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{classInterface}{Interface}}}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{29     \mbox{\hyperlink{classInterface_a4406d74c75bdfe150bf72be1f1cda8b1}{Interface}}();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} \mbox{\hyperlink{classInterface_a9fbb2f12539837325b46667be09362fe}{parseArgs}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[]);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} showHelp() \textcolor{keyword}{const};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{42     std::string \&\mbox{\hyperlink{classInterface_a9cbd457c05d267f03d630809c8171c22}{getPathToDB}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{48     std::string \&\mbox{\hyperlink{classInterface_a99a4a20b61e26bf770b566346a83c9a1}{getPathToLog}}();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{54     std::string \&\mbox{\hyperlink{classInterface_a309128e4c999ccf3ecea0ec1e8e8400f}{getAddress}}();}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{int} \mbox{\hyperlink{classInterface_a3a5c1db74d78ce7ec5e2f69e8de29f27}{getPort}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \textcolor{keyword}{private}:}
+\DoxyCodeLine{63     std::string pathToDB;  }
+\DoxyCodeLine{64     std::string pathToLog; }
+\DoxyCodeLine{65     std::string address;   }
+\DoxyCodeLine{66     \textcolor{keywordtype}{int} port;              }
+\DoxyCodeLine{67 \};}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// INTERFACE\_H}}
+
+\end{DoxyCode}

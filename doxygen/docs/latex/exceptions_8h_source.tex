@@ -1,0 +1,59 @@
+\hypertarget{exceptions_8h_source}{}\doxysection{exceptions.\+h}
+\label{exceptions_8h_source}\index{/home/student/Документы/busigin/server/source/modules/exceptions.h@{/home/student/Документы/busigin/server/source/modules/exceptions.h}}
+\mbox{\hyperlink{exceptions_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef EXCEPTIONS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define EXCEPTIONS\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <exception>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{classException}{Exception}} : \textcolor{keyword}{public} std::exception \{}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \mbox{\hyperlink{classException_ae2b46f6edd1bda557d9c424c5ed059dd}{Exception}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classException_a80bf622a8fc3c48fa6ab1a3fc024ff91}{message}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classException_a6211fd6ce557f134b646d00486746cb1}{func}} = \textcolor{stringliteral}{"{}Undefended"{}}, \textcolor{keywordtype}{bool} \mbox{\hyperlink{classException_ab28fd03b3d3f97b00c0a3e37d4e5d809}{is\_critical}} = \textcolor{keyword}{false});}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     std::string \mbox{\hyperlink{classException_a0f5d54dd24f5d6f0873f1642eee7f4ab}{getName}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{30     std::string \mbox{\hyperlink{classException_a657c5c353571a96e39a0a553375d6060}{getFunc}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{31     std::string \mbox{\hyperlink{classException_acea06c50f6eeaaaae36f187d99ef9226}{getMessage}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{32     std::string \mbox{\hyperlink{classException_aec343e3ab70446d9cfb22da7101bc373}{getTime}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{33     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classException_a2317b19e17eb076a085c364928ce8e73}{isCritical}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{39     \textcolor{keyword}{const} \textcolor{keywordtype}{char} *\mbox{\hyperlink{classException_a91eace2bc486fa18d3f913a28f3921f8}{what}}() \textcolor{keyword}{const} \textcolor{keyword}{noexcept} \textcolor{keyword}{override};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{42     std::string \mbox{\hyperlink{classException_a1881c44fa7b9ba55a1a16882c999a0e6}{name}}; }
+\DoxyCodeLine{43     std::string \mbox{\hyperlink{classException_a6211fd6ce557f134b646d00486746cb1}{func}}; }
+\DoxyCodeLine{44     std::string \mbox{\hyperlink{classException_a80bf622a8fc3c48fa6ab1a3fc024ff91}{message}}; }
+\DoxyCodeLine{45     std::string \mbox{\hyperlink{classException_a1cdca197e4d37fafee46b46260e544f6}{time}}; }
+\DoxyCodeLine{46     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classException_ab28fd03b3d3f97b00c0a3e37d4e5d809}{is\_critical}}; }
+\DoxyCodeLine{47     \textcolor{keyword}{mutable} std::string \mbox{\hyperlink{classException_aef95392c78d379942ab8e52ec84dd6ed}{what\_message}}; }
+\DoxyCodeLine{48 \};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{53 \textcolor{keyword}{class }\mbox{\hyperlink{classRWException}{RWException}} : \textcolor{keyword}{public} \mbox{\hyperlink{classException}{Exception}} \{}
+\DoxyCodeLine{54 \textcolor{keyword}{public}:}
+\DoxyCodeLine{55     \mbox{\hyperlink{classRWException}{RWException}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classException_a80bf622a8fc3c48fa6ab1a3fc024ff91}{message}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classException_a6211fd6ce557f134b646d00486746cb1}{func}} = \textcolor{stringliteral}{"{}Undefended"{}}, \textcolor{keywordtype}{bool} \mbox{\hyperlink{classException_ab28fd03b3d3f97b00c0a3e37d4e5d809}{is\_critical}} = \textcolor{keyword}{false});}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{61 \textcolor{keyword}{class }\mbox{\hyperlink{classArgsDecodeException}{ArgsDecodeException}} : \textcolor{keyword}{public} \mbox{\hyperlink{classException}{Exception}} \{}
+\DoxyCodeLine{62 \textcolor{keyword}{public}:}
+\DoxyCodeLine{63     \mbox{\hyperlink{classArgsDecodeException}{ArgsDecodeException}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classException_a80bf622a8fc3c48fa6ab1a3fc024ff91}{message}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classException_a6211fd6ce557f134b646d00486746cb1}{func}} = \textcolor{stringliteral}{"{}Undefended"{}}, \textcolor{keywordtype}{bool} \mbox{\hyperlink{classException_ab28fd03b3d3f97b00c0a3e37d4e5d809}{is\_critical}} = \textcolor{keyword}{false});}
+\DoxyCodeLine{64 \};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{69 \textcolor{keyword}{class }\mbox{\hyperlink{classDataDecodeException}{DataDecodeException}} : \textcolor{keyword}{public} \mbox{\hyperlink{classException}{Exception}} \{}
+\DoxyCodeLine{70 \textcolor{keyword}{public}:}
+\DoxyCodeLine{71     \mbox{\hyperlink{classDataDecodeException}{DataDecodeException}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classException_a80bf622a8fc3c48fa6ab1a3fc024ff91}{message}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classException_a6211fd6ce557f134b646d00486746cb1}{func}} = \textcolor{stringliteral}{"{}Undefended"{}}, \textcolor{keywordtype}{bool} \mbox{\hyperlink{classException_ab28fd03b3d3f97b00c0a3e37d4e5d809}{is\_critical}} = \textcolor{keyword}{false});}
+\DoxyCodeLine{72 \};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{77 \textcolor{keyword}{class }\mbox{\hyperlink{classAuthException}{AuthException}} : \textcolor{keyword}{public} \mbox{\hyperlink{classException}{Exception}} \{}
+\DoxyCodeLine{78 \textcolor{keyword}{public}:}
+\DoxyCodeLine{79     \mbox{\hyperlink{classAuthException}{AuthException}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classException_a80bf622a8fc3c48fa6ab1a3fc024ff91}{message}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classException_a6211fd6ce557f134b646d00486746cb1}{func}} = \textcolor{stringliteral}{"{}Undefended"{}}, \textcolor{keywordtype}{bool} \mbox{\hyperlink{classException_ab28fd03b3d3f97b00c0a3e37d4e5d809}{is\_critical}} = \textcolor{keyword}{false});}
+\DoxyCodeLine{80 \};}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{85 \textcolor{keyword}{class }\mbox{\hyperlink{classNetworkException}{NetworkException}} : \textcolor{keyword}{public} \mbox{\hyperlink{classException}{Exception}} \{}
+\DoxyCodeLine{86 \textcolor{keyword}{public}:}
+\DoxyCodeLine{87     \mbox{\hyperlink{classNetworkException}{NetworkException}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classException_a80bf622a8fc3c48fa6ab1a3fc024ff91}{message}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classException_a6211fd6ce557f134b646d00486746cb1}{func}} = \textcolor{stringliteral}{"{}Undefended"{}}, \textcolor{keywordtype}{bool} \mbox{\hyperlink{classException_ab28fd03b3d3f97b00c0a3e37d4e5d809}{is\_critical}} = \textcolor{keyword}{false});}
+\DoxyCodeLine{88 \};}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// EXCEPTIONS\_H}}
+
+\end{DoxyCode}
